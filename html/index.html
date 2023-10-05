@@ -19,6 +19,7 @@
             border-radius: 5px;
         }
 
+
         .navbar {
         background-color: #333; /* Cambia el color de fondo de la barra de navegación */
         color: #fff; /* Cambia el color del texto de la barra de navegación */
@@ -208,7 +209,27 @@
     </div>
 
 
+    <div class="education-section">
+    
+    <style>
+    .education-section{
+        text-align: center;
+        background-color: white;
+        height: 150%;
+    }
+    .education-section table {
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+    width: 80%; /* Aumenta el ancho de la tabla al 80% del contenedor */
+}
 
+    /* Estilos para las filas de la tabla al pasar el cursor sobre ellas */
+    .education-section tr:hover {
+    transform: scale(1.1); /* Aplica una transición de escala al pasar el cursor */
+    transition: transform 0.3s; /* Duración de la transición */
+    cursor: pointer;
+}
+    </style>
     <h2>Education</h2>
     <!-- This is a table for showing my education history and the periods I've been studying-->
     <table border="1">
@@ -228,6 +249,7 @@
             <td>2023-present</td>
         </tr>
     </table>
+    </div>
 
     <h2>Job Experience</h2>
     <!-- This is the same but for my jobs-->
