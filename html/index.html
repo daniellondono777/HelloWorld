@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <style>
+        
         body {
             background-color: #3a0d0d;
             font-family: Arial, sans-serif;
@@ -16,9 +17,17 @@
             border: 2px solid #555;
             border-radius: 5px;
         }
+
+        .navbar {
+        background-color: #333; /* Cambia el color de fondo de la barra de navegación */
+        color: #fff; /* Cambia el color del texto de la barra de navegación */
+        padding: 20px; /* Añade espacio interno a la barra de navegación */
+      }
+
     </style>
 
 <body>
+<div class="navbar">
     <h1>
         Hello World - Daniel
     </h1>
@@ -26,22 +35,60 @@
         My name is Daniel Londoño and I was born in Colombia. I love boxing, chess and football. I graduated from
         Computer Engineering and I'm a pseudo Financial Researcher.
     </p>
+</div>
 
+<section class="first-section">
+<style>
+
+
+    /* Setting up grid for images */
+    .first-section {
+        position: relative; /* Establece la posición de la primera sección como relativa */
+        z-index: 1;
+        background-color: #fff; /* Cambia el color de fondo de la primera sección */
+        color: #333; /* Cambia el color del texto de la primera sección */
+        padding: 20px; /* Añade espacio interno a la primera sección */
+        margin-top: 20px; /* Añade margen superior para separar la primera sección de la barra de navegación */
+      }
+      .main-imges {
+        display: grid;
+        grid-template-columns: 50% 50%; /* Cambia a dos columnas */
+        grid-template-rows: 30% 30%;
+        grid-template-areas: "mainImg1 mainImg2"; /* Asigna áreas a las imágenes */
+      }
+      .main-img {
+        text-align: center;
+      }
+
+      .main-img img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .main-imges h3 {
+        text-align: center;
+      }
+</style>
+<div class="main-imges"> 
     <h3>Two of my favorite boxers</h3>
-    <div style="display: flex; justify-content: center; align-items: center;">
+    <div>
         <img src="https://pbs.twimg.com/media/FDkf50yUYAEsB6O.jpg:large"
-            alt="Canelo Alvarez Undisputed Super Middleweight Champion of the World" width="600" height="400"
-            style="display: inline-block;">
+            alt="Canelo Alvarez Undisputed Super Middleweight Champion of the World" width="600" height="400">
     </div>
-    <div style="display: flex; justify-content: center; align-items: center;">
+    <div >
         <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17bb30f2-b9f4-4efc-ab1b-b9d901530c30_1200x800.jpeg"
-            alt="Bud Crawford Undisputed Welterweight Champion of the World" width="600" height="400"
-            style="display: inline-block;">
+            alt="Bud Crawford Undisputed Welterweight Champion of the World" width="600" height="400">
     </div>
+
+</div>
+</section>
 
     <div>
         <a href="https://medium.com/@daniellondono17">Personal Research Website</a>
     </div>
+
 
 
     <h3 align="left">Someone who inspires me: </h3>
